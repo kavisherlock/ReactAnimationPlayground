@@ -1,26 +1,32 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+import SpringApp from './components/spring/App.js';
+import MotionApp from './components/motion/App.js';
+
+const Index = () => <h2>Home</h2>;
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/spring/">React Spring</Link>
+              </li>
+              <li>
+                <Link to="/motion/">React Motion</Link>
+              </li>
+            </ul>
+          </nav>
+    
+          <Route path="/" exact component={Index} />
+          <Route path="/spring/" component={SpringApp} />
+          <Route path="/motion/" component={MotionApp} />
+        </div>
+      </Router>
     );
   }
 }

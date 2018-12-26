@@ -30,3 +30,32 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background: steelblue;
+}
+
+h2 {
+  margin: 10px;
+  color: lavender;
+}
+
+nav {
+  text-align: right;
+  border-bottom: 2px solid darkblue;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  margin: 0 10px;
+}
+
+li a {
+  border: 1px dotted lavender;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 120%;
+  font-weight: bold;
+  color: lavender;
+}
