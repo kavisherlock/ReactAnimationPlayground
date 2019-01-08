@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import SpringExample from './Spring';
-import TransitionExample from './Transition';
+import PoseExample from './Pose';
+import ZoomExample from './Zoom';
 
 class App extends Component {
   render() {
@@ -11,13 +11,13 @@ class App extends Component {
         <div>
           <nav style={{ textAlign: 'left' }}>
             <ul>
-              <li><Link to="/spring">Spring</Link></li>
-              <li><Link to="/spring/transition">Transition</Link></li>
+              <li><Link to="/pose">Pose</Link></li>
+              <li><Link to="/pose/zoom">Zoom</Link></li>
             </ul>
           </nav>
     
-          <Route path="/spring" exact component={SpringExample} />
-          <Route path="/spring/transition" exact component={TransitionExample} />
+          <Route path="/pose" exact component={PoseExample} />
+          <Route path="/pose/zoom" exact component={ZoomExample} />
         </div>
       </Router>
     );

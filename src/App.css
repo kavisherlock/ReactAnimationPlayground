@@ -136,3 +136,33 @@ button:hover, #submit:hover {
 a {
   color: #4EADBE;
 }
+
+.transition > div {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Kanit, sans-serif;
+  font-weight: 800;
+  font-size: 10em;
+  will-change: transform, opacity;
+}
+
+.poseExample {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.poseExample .box {
+  width: auto;
+  height: auto;
+  transform-origin: 50% 50%;
+}

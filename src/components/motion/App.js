@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
-import { Motion, spring, presets } from 'react-motion';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import Body from '../Body';
-import '../../App.css';
+import MotionExample from './Motion';
+import StaggeredExample from './Staggered';
 
 class App extends Component {
   render() {
     return (
-      <Motion
-        defaultStyle={{ opacity: 0, y: 500 }}
-        style={{ opacity: spring(1, presets.gentle ), y: spring(0, presets.gentle ) }}
-      >
-        { interpolatedStyle => (
-          <div className="App" style={{
-            WebkitTransform: `translate3d(0, ${interpolatedStyle.y}px, 0)`,
-            transform: `translate3d(0, ${interpolatedStyle.y}px, 0)`,
-          }}>
-            <Body />
-          </div>
-        )}
-      </Motion>
+      <Router>
+        <div>
+          <nav style={{ textAlign: 'left' }}>
+            <ul>
+              <li><Link to="/motion">Motion</Link></li>
+              <li><Link to="/motion/staggered">Staggered Motion</Link></li>
+            </ul>
+          </nav>
+    
+          <Route path="/motion" exact component={MotionExample} />
+          <Route path="/motion/staggered" exact component={StaggeredExample} />
+        </div>
+      </Router>
     );
   }
 }
