@@ -1,0 +1,29 @@
+.plain button {
+  transition: transform 1s ease-in-out; 
+}
+
+.plain button:hover { 
+  transform: translateY(100px) scale(2) rotate(90deg);
+}
+
+.plain section {
+  animation: plainSlideIn 1s ease-in-out , fadeIn 1s ease-in-out;
+}
+
+@keyframes plainSlideIn {
+  from {
+    transform: translateY(300px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

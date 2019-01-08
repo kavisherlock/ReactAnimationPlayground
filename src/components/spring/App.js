@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <Spring
-        from={{ opacity: 0, y: -1000 }}
+        from={{ opacity: 0, y: 1000 }}
         to={{ opacity: 1, y: 0 }}
         config = { config.stiff }
       >

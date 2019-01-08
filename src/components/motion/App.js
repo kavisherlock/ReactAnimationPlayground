@@ -8,8 +8,8 @@ class App extends Component {
   render() {
     return (
       <Motion
-        defaultStyle={{ opacity: 0, y: -1000 }}
-        style={{ opacity: spring(1, presets.stiff ), y: spring(0, presets.stiff ) }}
+        defaultStyle={{ opacity: 0, y: 500 }}
+        style={{ opacity: spring(1, presets.gentle ), y: spring(0, presets.gentle ) }}
       >
         { interpolatedStyle => (
           <div className="App" style={{

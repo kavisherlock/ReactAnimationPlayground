@@ -1,25 +1,31 @@
 import React, { Component } from 'react';
 
 import '../App.css';
-import logo from '../logo.svg';
 
 class Body extends Component {
   render() {
     return (
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section> 
+        <div className="card">
+          <div className="inner">
+            <div className="info">
+              <h2>Your Reservation is complete!</h2>
+              <p>LINDSEY STIRLING * EVANESCENCE</p>
+              <div className="ticketinfo">
+                <h3>7:00pm Friday July 6th, 2018</h3>
+                <a href="#">Download your tickets here</a>
+              </div>
+            </div>
+          </div>
+          <div className="icon-space">
+            <img
+              alt="lindsey stirling"
+              src="https://s3.amazonaws.com/busites_www/woodlandscenter2016com/pages/Lindsey%20Stirling%20&%20Evanescence%20-%20August%2025%20-%20Event%20Square%20-%203.5.18.png"
+            />
+          </div>
+        </div>
+        <button>Make another reservation</button>
+      </section>
     );
   }
 }
