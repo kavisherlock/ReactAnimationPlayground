@@ -9,11 +9,11 @@ class MotionApp extends Component {
     return (
       <Motion
         defaultStyle={{ opacity: 0, y: 500 }}
-        style={{ opacity: spring(1, presets.gentle ), y: spring(0, presets.gentle ) }}
+        style={{ opacity: spring(1, presets.gentle ), y: spring(0, presets.wobbly ) }}
       >
         { interpolatedStyle => (
           <div>
-            {/* <div style={{ paddingLeft: '100px', fontSize: '150%', color: 'white'}}>{interpolatedStyle.y}</div> */}
+            <div style={{ paddingLeft: '100px', fontSize: '150%', color: 'white'}}>{interpolatedStyle.y}</div>
             <div className="App" style={{
               WebkitTransform: `translate3d(0, ${interpolatedStyle.y}px, 0)`,
               transform: `translate3d(0, ${interpolatedStyle.y}px, 0)`,

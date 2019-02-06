@@ -9,7 +9,7 @@ class Body extends Component {
         <div className="card">
           <div className="inner">
             <div className="info">
-              <h2>Your Reservation is complete!</h2>
+              <h2>Your tickets are confirmed!!</h2>
               <p>LINDSEY STIRLING * EVANESCENCE</p>
               <div className="ticketinfo">
                 <h3>7:00pm Friday July 6th, 2018</h3>

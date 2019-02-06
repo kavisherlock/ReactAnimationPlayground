@@ -1,3 +1,37 @@
+## React Aniimation Playground
+
+A simple webpage to play with and learn to use different animation techniques and libraries in React.js
+The following were used:
+* CSS Animations
+* React Motion
+* React Spring
+* Pose
+
+### CSS Animations
+
+Simple css transitions can go a long way to add animation in a React application. For simple animations, with one or two sequences, CSS is the recomended way to animate. There is no reason to over-engineer and import libraries you don't need. CSS is also the most performant way to animate. Use of simple CSS transitions and keyframes are shown on the **Plain CSS** page
+
+It's easy to apply a transition after all the coding is done, call your component animated and move on. But we don't want animations to be gratuitous. An important part of animatiion is folllow-through. On the **Good CSS** page, we see an example of animation of CSS which is slightly more natural and pleasing to look at
+
+### React Motion
+
+One of the most popular and beautiful animation libraries out there. It was a little tricky in the beginning to wrap my head around the API, but eventually, it all started to make sense. 
+
+React Motion exports three main components, Motion, StaggeredMotion and TransitionMotion. I have example pages for the **Motion** and the **StaggeredMotion** components. To see the Staggered Motion in action, click on the image in the middle and drag your mouse around.
+
+### React Spring
+
+Generally considered one of the best animation packages for React apps out there. Focus: no magic, simplicity and declarative expression. Uses spring-like physics in its core animations; easy to configure. The Spring component makes is easy to manipulate styles, HTML, SVG or any sort of values from measurement units to actual data.
+
+While Spring comes with many out-of-the-box animation techniques, my demos have the **Spring** and **Transition** components
+
+### Pose
+
+In todays times, code never lasts long, especially when in a start-up like environment. The components you write today might not even exist six months from now. There is no point in spending days animatiing your components beautifully, if they're just going to be replaced. With a much higher focus towards simplicity and making easy animated components, that are almost disposable.
+
+I have simple examles of a **posed div** and a **posed image** in my demo. To see the image animation in action, click on the image in the center.
+<hr>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -15,7 +49,7 @@ You will also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+See the section about [running tests]
 
 ### `npm run build`
 
@@ -24,21 +58,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
